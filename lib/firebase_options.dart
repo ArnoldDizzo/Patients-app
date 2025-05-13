@@ -27,7 +27,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -41,46 +44,39 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyApI_X28Pk_LzQ4IPoZtJpwQ2oAYXP7R_Q',
-    appId: '1:54244602831:web:8c2a04b750d0a7304b18ba',
-    messagingSenderId: '54244602831',
-    projectId: 'patient-vitals-app',
-    authDomain: 'patient-vitals-app.firebaseapp.com',
-    storageBucket: 'patient-vitals-app.firebasestorage.app',
+    apiKey: 'AIzaSyBZysprOJjY5FFSqTm7c_3ABm5WGXVdEb4',
+    appId: '1:516557523752:web:afbd90461fd44a64305e1d',
+    messagingSenderId: '516557523752',
+    projectId: 'patients-4cdb9',
+    authDomain: 'patients-4cdb9.firebaseapp.com',
+    storageBucket: 'patients-4cdb9.firebasestorage.app',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyBKv0IqiXRlHgndNh9NcAMzJBSzXYHjmbg',
-    appId: '1:54244602831:android:60a49084df7990654b18ba',
-    messagingSenderId: '54244602831',
-    projectId: 'patient-vitals-app',
-    storageBucket: 'patient-vitals-app.firebasestorage.app',
+    apiKey: 'YOUR-ANDROID-API-KEY',
+    appId: 'YOUR-ANDROID-APP-ID',
+    messagingSenderId: 'YOUR-SENDER-ID',
+    projectId: 'YOUR-PROJECT-ID',
+    storageBucket: 'YOUR-STORAGE-BUCKET',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyA4_wJw9oLkGEiEEzrrm8E3xlYgqNVwN5E',
-    appId: '1:54244602831:ios:db6c95e1a96937ae4b18ba',
-    messagingSenderId: '54244602831',
-    projectId: 'patient-vitals-app',
-    storageBucket: 'patient-vitals-app.firebasestorage.app',
-    iosBundleId: 'com.example.patientVitalsApp',
+    apiKey: 'YOUR-IOS-API-KEY',
+    appId: 'YOUR-IOS-APP-ID',
+    messagingSenderId: 'YOUR-SENDER-ID',
+    projectId: 'YOUR-PROJECT-ID',
+    storageBucket: 'YOUR-STORAGE-BUCKET',
+    iosClientId: 'YOUR-IOS-CLIENT-ID',
+    iosBundleId: 'YOUR-IOS-BUNDLE-ID',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyA4_wJw9oLkGEiEEzrrm8E3xlYgqNVwN5E',
-    appId: '1:54244602831:ios:db6c95e1a96937ae4b18ba',
-    messagingSenderId: '54244602831',
-    projectId: 'patient-vitals-app',
-    storageBucket: 'patient-vitals-app.firebasestorage.app',
-    iosBundleId: 'com.example.patientVitalsApp',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyApI_X28Pk_LzQ4IPoZtJpwQ2oAYXP7R_Q',
-    appId: '1:54244602831:web:3c3db7f2d12071404b18ba',
-    messagingSenderId: '54244602831',
-    projectId: 'patient-vitals-app',
-    authDomain: 'patient-vitals-app.firebaseapp.com',
-    storageBucket: 'patient-vitals-app.firebasestorage.app',
+    apiKey: 'YOUR-MACOS-API-KEY',
+    appId: 'YOUR-MACOS-APP-ID',
+    messagingSenderId: 'YOUR-SENDER-ID',
+    projectId: 'YOUR-PROJECT-ID',
+    storageBucket: 'YOUR-STORAGE-BUCKET',
+    iosClientId: 'YOUR-MACOS-CLIENT-ID',
+    iosBundleId: 'YOUR-MACOS-BUNDLE-ID',
   );
 }
